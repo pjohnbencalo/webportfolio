@@ -23,7 +23,7 @@
 
 		<!-- Navbar Section -->
 		 <nav class="navbar navbar-expand-md fixed-top mb-5 border-bottom-md navbar-dark">
-		   <a class="navbar-brand custom-border px-3 py-0">PJ</a>
+		   <a id="pj-logo" class="navbar-brand custom-border px-3 py-0">PJ</a>
 		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		     <span class="navbar-toggler-icon"></span>
 		   </button>
@@ -47,7 +47,7 @@
 		<!-- End Navbar Section -->
 
 	 	<!-- Landing Section -->
-	 	 <div id="landing" class="row p-5 mt-2 vh-100 d-md-flex align-items-center">
+	 	 <div id="landing" class="row p-5 mt-2 min-vh-100 d-md-flex align-items-center">
 	 	 	<div class="col col-md-5">
 	 	 		<img id="profile-img" class="rounded-circle" src="./images/philip.jpg">
 	 	 	</div>
@@ -55,12 +55,7 @@
  	 	 		<h5 id="intro-text" class="p-1">Hi, my name is</h5>
  	 	 		<h1 id="intro-name" class="font-weight-bold p-1">Philip John Bencalo</h1>
  	 	 		<h5 id="intro-subname" class="p-1">Full Stack Web Developer</h3>
- 	 	 		<p id="intro-description" class="p-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
- 	 	 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
- 	 	 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
- 	 	 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
- 	 	 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
- 	 	 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+ 	 	 		<p id="intro-description" class="p-1 mb-5">I am a web developer with a vast array of knowledge in many different front end and back end languages, responsive frameworks, databases, and best code practices. My objective is simply to be the best web developer that I can be and to contribute to the technology industry all that I know and can do.</p>
  	 	 		<a id="checkout" class="text-decoration-none p-3" href="#projects">Check out my projects!</a>
  	 	 	</div>
  	 	 </div>
@@ -68,7 +63,7 @@
 	 	<!-- End Landing Section -->
 
 	 	<!-- Projects Section -->
-	 	 <div id="projects" class="mx-auto row vh-100 card-deck p-5">
+	 	 <div id="projects" class="mx-auto row min-vh-100 card-deck p-5">
 
 	 	 	<!-- Project Title -->
 	 	 	 <h1 id="projects-title" class="col-12 mt-3">Projects</h1>
@@ -108,8 +103,13 @@
 	 	<!-- End Projects Section -->
 
 	 	<!-- Contact Section -->
-	 	 <div id="contact" class="row mx-auto vh-100 p-5 d-flex justify-content-center">
-	 	 	<form class="p-3 col-12 col-md-8 col-xl-4 custom-border">
+	 	 <div id="contact" class="row mx-auto min-vh-100 p-5 d-flex justify-content-center">
+
+	 	 	<!-- Contact Title -->
+	 	 	 <h1 id="contact-title" class="col-12 mt-3">Contact Me</h1>
+	 	 	<!-- End Contact Title -->
+
+	 	 	<form class="mt-3 p-3 col-12 col-md-8 col-xl-4 custom-border">
 	 	 	  <div class="form-group">
 	 	 	    <label for="name">Name</label>
 	 	 	    <input type="text" class="form-control" id="name" placeholder="Your Name">
@@ -119,12 +119,13 @@
 	 	 	    <input type="email" class="form-control" id="email" placeholder="name@example.com">
 	 	 	  </div>
 	 	 	  <div class="form-group">
-	 	 	    <label for="contact">Contact Number</label>
-	 	 	    <input type="text" class="form-control" id="contact" placeholder="+63 900 000 0000">
+	 	 	    <label for="contact-number">Contact Number</label>
+	 	 	    <input type="text" class="form-control" id="contact-number" placeholder="+63 900 000 0000">
 	 	 	  </div>
 	 	 	  <div class="form-group">
 	 	 	  	 <label for="concern">Concern</label>
 	 	 	  	 <select class="form-control" id="concern" name="concern">
+	 	 	  	 	<option>--</option>
 	 	 	  		<option value="quotation">Quotation</option>
 	 	 	  		<option value="appointment">Appointment</option>
 	 	 	  		<option value="inquiry">Inquiry</option>
@@ -134,16 +135,43 @@
 	 	 	    <label for="message">Message</label>
 	 	 	    <textarea class="form-control" id="message" rows="4" ></textarea>
 	 	 	  </div>
+
+	 	 	  <!-- Button trigger modal -->
+	 	 	  <button id="send-email-btn" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+	 	 	    Send Email
+	 	 	  </button>
+	 	 	  <!-- End Button trigger modal -->
+
+	 	 	  <!-- Modal -->
+	 	 	  <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	 	 	    <div class="modal-dialog">
+	 	 	      <div class="modal-content">
+	 	 	        <div class="modal-header">
+	 	 	          <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
+	 	 	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	 	 	            <span aria-hidden="true">&times;</span>
+	 	 	          </button>
+	 	 	        </div>
+	 	 	        <div class="modal-body">
+	 	 	          Message Successfully Sent
+	 	 	        </div>
+	 	 	        <div class="modal-footer">
+	 	 	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+	 	 	        </div>
+	 	 	      </div>
+	 	 	    </div>
+	 	 	  </div>
+	 	 	  <!-- End Modal -->
 	 	 	</form>
 	 	 </div>
 	 	<!-- End Contact Section -->
 
 	 	<!-- Tools Section -->
-	 	 <div id="tools" class="row">
+	 	 <div id="tools" class="row mx-auto min-vh-100 p-5">
 	 	 	    <!-- Core Tools Section Start -->
-	 	 	    <h3>Core Tools</h3>
+	 	 	    <h3 id="core-tools-title" class="col-12 mt-3">Core Tools</h3>
 
-	 	 	    <div>
+	 	 	    <div class="col">
 	 	 	        <div>
 	 	 	            <img width="150" src="images/html.png"/>
 	 	 	        </div>
@@ -155,17 +183,17 @@
 	 	 	    <!-- Core Tools Section End -->
 	 	 	    
 	 	 	    <!-- Other Tools Section Start -->
-	 	 	    <h3>Other Tools</h3>
+	 	 	    <h3 id="other-tools-title" class="col-12 mt-3">Other Tools</h3>
 
-	 	 	    <div class="d-flex d-md-block">
-	 	 	        <div>
+	 	 	    <div class="d-flex">
+	 	 	        <div class="col">
 	 	 	            <img width="150" src="images/mongodb.png"/>
 	 	 	            <img width="150" src="images/nodejs.png"/>
 	 	 	            <img width="150" src="images/expressjs.png"/>
 	 	 	            <img width="150" src="images/reactjs.png"/>
 	 	 	            <img width="150" src="images/heroku.png"/>
 	 	 	        </div>
-	 	 	        <div>
+	 	 	        <div class="col">
 	 	 	            <img width="150" src="images/git.png"/>
 	 	 	            <img width="150" src="images/sublime.png"/>
 	 	 	            <img width="150" src="images/postman.png"/>
@@ -180,9 +208,38 @@
 	 	 </div>
 	 	<!-- End Tools Section -->
 
+	 	<!-- Footer -->
+	 	 <div id="footer" class="p-3 row mx-auto d-block d-md-flex justify-content-end">
+
+	 	 	<p id="footer-text" class="mr-auto my-auto">Connect through social media</p>
+
+	 	 	<!-- Facebook -->
+	 	 	<a href="https://www.facebook.com/apexxx1" target="_blank">
+	 	 		<img class="img-footer p-1 mx-2" alt="facebook" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png">
+	 	 	</a>
+	 	 	
+	 	 	<!-- Linkedin -->
+	 	 	<a href="https://www.linkedin.com/in/pjbencalo/" target="_blank">
+	 	 		<img class="img-footer p-1 mx-2" alt="linkedin" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png">
+	 	 	</a>
+	 	 	
+	 	 	<!-- GitHub -->
+	 	 	<a href="https://github.com/pjohnbencalo" target="_blank">
+	 	 		<img class="img-footer p-1 mx-2" alt="github" src="https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-512.png">
+	 	 	</a>
+	 	 	
+	 	 	<!-- GitLab -->
+	 	 	<a href="https://gitlab.com/pjbencalo" target="_blank">
+	 	 		<img class="img-footer p-1 mx-2" alt="gitlab" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png">
+	 	 	</a>
+	 	 	
+	 	 </div>
+	 	<!-- End Footer -->
+
 	 </div>
 	<!-- End Container -->
 	
+
 
 
 	<!-- Bootstrap JS Bundle -->
