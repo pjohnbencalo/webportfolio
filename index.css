@@ -8,7 +8,7 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Setting background color for landing and navbar */
+/* Setting background color for landing, navbar, card, contact, footer */
 #landing, .navbar, .card, #contact, #footer{
 	background: #0A192F;
 }
@@ -24,8 +24,12 @@ a.nav-link {
 	color: white !important;
 }
 
-#pj-logo, #intro-text, #checkout, #send-email-btn, #footer-text{
-	color: #25dbcf;
+a.nav-link:hover {
+	color: #25dbcf !important;
+}
+
+a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text {
+	color: #25dbcf !important;
 }
 
 #intro-name, #projects-title, #contact-title, #core-tools-title, #other-tools-title{
@@ -47,7 +51,7 @@ a.nav-link {
 	color: #ccd6f6;
 }
 
-/* Border for PJ and checkout my projects */
+/* Border for PJ and checkout my projects, send email btn and navbar toggler */
 .custom-border, #checkout, #send-email-btn, .navbar-toggler {
 	border: 2px solid #25dbcf !important;
 }
@@ -73,4 +77,28 @@ a.nav-link {
 .img-footer {
 	width: 3rem;
 	height: 3rem;
+}
+
+/* Animation Typewriter effect for lg scren */
+
+@media (min-width: 992px) {
+  #intro-name {
+  	display: inline-flex;
+  	word-break: break-all;
+  	height: 1.2em;
+  	width:0%;
+  	overflow: hidden;
+  	animation:typing 5s linear infinite alternate;
+  }
+
+  #intro-name:before {
+  	content:" ";
+  	display:inline-block;
+  }
+
+  @keyframes typing{
+  	90%,100% {
+  		width:100%
+  	}
+  }
 }
