@@ -9,7 +9,7 @@ html {
 }
 
 /* Setting background color for landing and navbar */
-#landing, .navbar, .card{
+#landing, .navbar, .card, #contact{
 	background: #0A192F;
 }
 
@@ -24,11 +24,11 @@ a.nav-link {
 	color: white !important;
 }
 
-a.navbar-brand, #intro-text, #checkout {
+a.navbar-brand, #intro-text, #checkout{
 	color: #25dbcf;
 }
 
-#intro-name {
+#intro-name, #projects-title {
 	color: #ccd6f6;
 	font-size: 4rem;
 }
@@ -60,8 +60,8 @@ a.navbar-brand, #intro-text, #checkout {
   }
 }
 
-/* Adding background color to projects page */
-#projects {
+/* Adding background color to projects page, tools page and form */
+#projects, #tools, form{
 	background-color: #222f43;
 }
 
@@ -71,6 +71,6 @@ a.navbar-brand, #intro-text, #checkout {
 	height: 200px;
 }
 
-.card-title, .card-text {
+.card-title, .card-text, form>div>label {
 	color: #ccd6f6;
 }
