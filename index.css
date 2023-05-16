@@ -1,12 +1,16 @@
 /* Add Font Family */
 body {
 	font-family: 'League Spartan', sans-serif;
-	background: #0A192F;
 }
 
 /* Change behavior of scroll */
 html {
 	scroll-behavior: smooth;
+}
+
+/* Setting background color for landing and navbar */
+#landing, .navbar, .card{
+	background: #0A192F;
 }
 
 /* Resize Profile image */
@@ -20,18 +24,53 @@ a.nav-link {
 	color: white !important;
 }
 
-/* Setting texts into custom color */
-a.navbar-brand, #intro-text {
+a.navbar-brand, #intro-text, #checkout {
 	color: #25dbcf;
 }
 
-/* Border for PJ */
-.custom-border {
+#intro-name {
+	color: #ccd6f6;
+	font-size: 4rem;
+}
+
+#intro-subname {
+	color: #8892B0;
+	font-size: 3rem;
+}
+
+#intro-description {
+	color: #8892B0;
+	font-size: 1rem;
+}
+
+/* Border for PJ and checkout my projects */
+.custom-border, #checkout {
 	border: 2px solid #25dbcf;
 }
 
+#checkout {
+	position: absolute;
+	margin-top: 2rem;
+}
+
+/* Putting border bottom starting md size */
 @media (min-width: 768px) {
   .border-bottom-md {
     border-bottom: 1px solid #25dbcf;
   }
+}
+
+/* Adding background color to projects page */
+#projects {
+	background-color: #222f43;
+}
+
+/* Changing width and height of images */
+
+.card-img-top {
+	height: 200px;
+}
+
+.card-title, .card-text {
+	color: #ccd6f6;
 }
