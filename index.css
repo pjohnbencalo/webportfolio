@@ -28,7 +28,7 @@ a.nav-link:hover {
 	color: #25dbcf !important;
 }
 
-a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text {
+a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text, .card-title {
 	color: #25dbcf !important;
 }
 
@@ -47,7 +47,7 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text {
 	font-size: 1rem;
 }
 
-.card-title, .card-text, form>div>label {
+.card-text, form>div>label {
 	color: #ccd6f6;
 }
 
