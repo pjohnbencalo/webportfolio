@@ -1,0 +1,37 @@
+/* Add Font Family */
+body {
+	font-family: 'League Spartan', sans-serif;
+	background: #0A192F;
+}
+
+/* Change behavior of scroll */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Resize Profile image */
+#profile-img {
+	width: 300px;
+	height: 300px;
+}
+
+/* Setting texts into custom color */
+a.nav-link {
+	color: white !important;
+}
+
+/* Setting texts into custom color */
+a.navbar-brand, #intro-text {
+	color: #25dbcf;
+}
+
+/* Border for PJ */
+.custom-border {
+	border: 2px solid #25dbcf;
+}
+
+@media (min-width: 768px) {
+  .border-bottom-md {
+    border-bottom: 1px solid #25dbcf;
+  }
+}
