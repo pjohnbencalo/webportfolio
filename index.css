@@ -79,6 +79,10 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text {
 	height: 3rem;
 }
 
+div.img-tools>div>img {
+	width: 150px;
+}
+
 /* Animation Typewriter effect for lg scren */
 
 @media (min-width: 992px) {
