@@ -68,7 +68,7 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text {
 	background-color: #222f43;
 }
 
-/* Changing width and height of images */
+/* Changing height of images */
 .card-img-top {
 	height: 200px;
 }
