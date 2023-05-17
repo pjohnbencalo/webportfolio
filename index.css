@@ -8,9 +8,9 @@ html {
 	scroll-behavior: smooth;
 }
 
-/* Setting background color for landing, navbar, card, contact, footer */
-#landing, .navbar, .card, #contact, #footer{
-	background: #0A192F;
+/* Setting background color for landing, navbar, card, tools, footer and form */
+#landing, .navbar, .card, #tools, #footer, form{
+	background-color: #0A192F;
 }
 
 /* Resize Profile image */
@@ -68,8 +68,8 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text, .card-tit
   }
 }
 
-/* Adding background color to projects page, tools page and form */
-#projects, #tools, form{
+/* Adding background color to projects page, contact page */
+#projects, #contact {
 	background-color: #222f43;
 }
 
