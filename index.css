@@ -9,8 +9,13 @@ html {
 }
 
 /* Setting background color for landing, navbar, card, tools, footer and form */
-#landing, .navbar, .card, #tools, #footer, form{
+#landing, .navbar, .card, #tools, #footer, form {
 	background-color: #0A192F;
+}
+
+/* Adding background color to projects page, contact page */
+#projects, #contact {
+	background-color: #222f43;
 }
 
 /* Resize Profile image */
@@ -66,11 +71,6 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text, .card-tit
   .border-bottom-md {
     border-bottom: 1px solid #25dbcf;
   }
-}
-
-/* Adding background color to projects page, contact page */
-#projects, #contact {
-	background-color: #222f43;
 }
 
 /* Changing height of images */
