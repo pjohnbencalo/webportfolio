@@ -34,8 +34,8 @@ a.nav-link:hover,
 	color: #25dbcf !important;
 }
 
-#checkout:hover, #send-email-btn:hover {
-	box-shadow: inset 0 0 10px rgba(37, 219, 207, 0.6), 0 0 9px 3px rgba(37, 219, 207, 0.2);
+#checkout:hover, #send-email-btn:hover, .card:hover {
+	box-shadow: inset 0 0 10px rgba(37, 219, 207, 0.6), 0 0 9px 3px rgba(37, 219, 207, 0.2) !important;
 }
 
 a.navbar-brand, #intro-text, #checkout, #send-email-btn, #footer-text, .card-title {
