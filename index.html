@@ -1,273 +1,268 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Bootstrap CSS Link -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- CDN CSS Sources Link -->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Bootstrap CSS Link -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
-	<!-- CSS External Link -->
-	<link rel="stylesheet" type="text/css" href="./index.css">
+		<!-- Font Awesome Soc Med Icon -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"
+	  />
 
-	<!-- Font League Spartan -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
+		<!-- CDN CSS Sources Link AOS Animate on Scroll-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-	<link rel="icon" href="./images/icon.png">
-	<title>PJ - Online Portfolio</title>
-</head>
-<body class="text-center" data-spy="scroll" data-target="#navbar">
+		<!-- CSS External Link -->
+		<link rel="stylesheet" type="text/css" href="./index.css">
 
-	<!-- Container -->
-	 <div class="container-fluid mx-0">
+		<!-- Font League Spartan -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&display=swap" rel="stylesheet">
 
-		<!-- Navbar Section -->
-		 <nav class="navbar navbar-expand-md fixed-top mb-5 border-bottom-md navbar-dark" id="navbar">
-		   <a class="navbar-brand custom-border px-3 py-0">PJ</a>
-		   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		     <span class="navbar-toggler-icon"></span>
-		   </button>
-		   <div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarNav">
-		     <ul class="navbar-nav">
-		       <li class="nav-item mx-3">
-		         <a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
-		       </li>
-		       <li class="nav-item mx-3">
-		         <a class="nav-link" href="#projects">Projects </a>
-		       </li>
-		       <li class="nav-item mx-3">
-		         <a class="nav-link" href="#tools">Tools</a>
-		       </li>
-		       <li class="nav-item mx-3">
-		         <a class="nav-link" href="#contact">Contact</a>
-		       </li>
-		     </ul>
-		   </div>
-		 </nav>
-		<!-- End Navbar Section -->
+		<!-- Icon -->
+		<link rel="icon" href="./images/icon.png">
 
-	 	<!-- Landing Section -->
-	 	 <div id="landing" class="row p-5 mt-2 min-vh-100 d-flex align-items-center">
-	 	 	<div class="col col-md-5">
-	 	 		<img id="profile-img" class="rounded-circle" src="./images/philip.jpg">
-	 	 	</div>
- 	 	 	<div id="name-info" class="col col-md-7 text-md-left">
- 	 	 		<h5 id="intro-text" class="p-1">Hi, my name is</h5>
- 	 	 		<h1 id="intro-name" class="font-weight-bold p-1">Philip John Bencalo</h1>
- 	 	 		<h5 id="intro-subname" class="p-1">Full Stack Web Developer</h3>
- 	 	 		<p id="intro-description" class="p-1 mb-5">I am a web developer with a wide range of expertise in different front end and back end languages, responsive frameworks, databases, and best code practices. My primary goal is to continuously strive for excellence and make valuable contributions to the technology industry by leveraging my knowledge and skills to the fullest extent possible.</p>
- 	 	 		<a id="checkout" class="text-decoration-none p-3" href="#projects">Check out my projects!</a>
- 	 	 	</div>
- 	 	 </div>
-	 	 </div>
-	 	<!-- End Landing Section -->
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
-	 	<!-- Projects Section -->
-	 	 <div id="projects" class="mx-auto row min-vh-100 card-deck p-5">
+		<title>PJ - Online Portfolio</title>
+	</head>
+	<body class="text-center preload" data-spy="scroll" data-target="#navbar">
 
-	 	 	<!-- Project Title -->
-	 	 	 <h1 id="projects-title" class="col-12 mt-3">Projects</h1>
-	 	 	<!-- End Project Title -->
+		<!-- Particles.js -->
+		<div id="particles-js"></div>
 
-	 	 	<!-- BMI Calculator Project -->
-	 	 	 <div class="card col-lg-4 mb-5 mb-lg-0 custom-border shadow-lg" data-aos="zoom-in">
-	 	 	   <img src="./images/card-bmi.png" class="card-img-top p-2 rounded" alt="Card BMI">
-	 	 	   <div class="card-body">
-	 	 	     <h5 class="card-title">BMI Calculator</h5>
-	 	 	     <p class="card-text">The Body Mass Index (BMI) Calculator can be used to calculate BMI values based on height and weight.</p>
-	 	 	   </div>
-	 	 	   <div class="card-footer">
-	 	 	     <small class="text-muted card-footer-text"></small>
-	 	 	   </div>
-	 	 	 </div>
-	 	 	<!-- End BMI Calculator Project -->
+		<!-- Container -->
+		<div class="container-fluid mx-0">
 
-	 	 	<!-- Login Project -->
-	 	 	 <div class="card col-lg-4 mb-5 mb-lg-0 mr-lg-5 ml-lg-5 custom-border shadow-lg" data-aos="zoom-in">
-	 	 	   <img src="./images/card-login.png" class="card-img-top p-2 rounded" alt="Card Login">
-	 	 	   <div class="card-body">
-	 	 	     <h5 class="card-title">Login Design</h5>
-	 	 	     <p class="card-text">A simple login design page. A login screen is a web page or an entry page to a web/mobile application.</p>
-	 	 	   </div>
-	 	 	   <div class="card-footer">
-	 	 	     <small class="text-muted card-footer-text"></small>
-	 	 	   </div>
-	 	 	 </div>
-	 	 	<!-- End Login Project -->
+			<!-- Navbar Section -->
+			<nav class="navbar navbar-expand-md fixed-top mb-5 border-bottom-md navbar-dark d-none" id="navbar">
+				<a class="navbar-brand custom-border px-3 py-0">PJ</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse d-md-flex justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="#landing">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="#projects">Projects </a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="#tools">Tools</a>
+					</li>
+					<li class="nav-item mx-3">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar Section -->
 
-	 	 	<!-- Chat App Project -->
-	 	 	 <div class="card col-lg-4 mb-5 mb-lg-0 custom-border shadow-lg" data-aos="zoom-in">
-	 	 	   <img src="./images/card-chatapp.png" class="card-img-top p-2 rounded" alt="Card ChatApp">
-	 	 	   <div class="card-body">
-	 	 	     <h5 class="card-title">Chat App</h5>
-	 	 	     <p class="card-text">Chatting app allows you to communicate with your customers in web chat rooms. It enables you to send and receive messages.</p>
-	 	 	   </div>
-	 	 	   <div class="card-footer">
-	 	 	     <small class="text-muted card-footer-text"></small>
-	 	 	   </div>
-	 	 	 </div>
-	 	 	<!-- End Chat App Project -->
+			<!-- Landing Section -->
+			<div id="landing" class="row p-5 mt-2 min-vh-100 d-flex align-items-center">
+				<div class="col col-md-5">
+					<img id="profile-img" class="rounded-circle shadow-2-strong" src="./images/philip.jpg">
+				</div>
+				<div id="name-info" class="col col-md-7 text-md-left">
+					<h5 id="intro-text" class="p-1">Hi, my name is</h5>
+					<h1 id="intro-name" class="font-weight-bold p-1">Philip John Bencalo</h1>
+					<h3 id="intro-subname" class="p-1">Full Stack Web Developer</h3>
+					<p id="intro-description" class="p-1 mb-5">I am a web developer with a wide range of expertise in different front end and back end languages, responsive frameworks, databases, and best code practices. My primary goal is to continuously strive for excellence and make valuable contributions to the technology industry by leveraging my knowledge and skills to the fullest extent possible.</p>
+					<a id="checkout" class="text-decoration-none p-3" href="#projects">Check out my projects!</a>
+				</div>
+			</div>
+			<!-- End Landing Section -->
 
-	 	 </div>
-	 	<!-- End Projects Section -->
+			<!-- Projects Section -->
+			<div id="projects" class="row min-vh-100 card-deck p-5">
 
+				<!-- Project Title -->
+				<h1 id="projects-title" class="col-12 mt-3" data-aos="fade-up" data-aos-duration="1000"> My Projects</h1>
+				<!-- End Project Title -->
 
-	 	<!-- Tools Section -->
-	 	 <div id="tools" class="row mx-auto min-vh-100 p-5">
-	 	 	    <!-- Core Tools Section Start -->
-	 	 	    <h3 id="core-tools-title" class="col-12 mt-3">Core Tools</h3>
+				<!-- Portfolio Design Project -->
+				<div class="card col-lg-4 mb-5 mb-lg-0 custom-border shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+					<a class="text-decoration-none" href="https://codepen.io/pjbencalo/full/GREwGeR" target="_blank">
+						<img src="https://assets.codepen.io/6850878/internal/screenshots/pens/GREwGeR.default.png?fit=cover&format=auto&ha=false&height=540&quality=75&v=2&version=1632729505&width=960" class="card-img-top p-2 rounded" alt="Portfolio">
+					
+						<div class="card-body">
+							<h5 class="card-title">Portfolio Design</h5>
+							<p class="card-text">A portfolio created for <em>freeCodeCamp</em> during my college days.</p>
+						</div>
+					</a>
+					<div class="card-footer mt-auto">
+						<small class="text-muted card-footer-text"></small>
+					</div>
+				</div>
+				<!-- End Portfolio Design Project -->
 
-	 	 	    <div class="col img-tools">
-	 	 	        <div>
-	 	 	            <img src="./images/html.png"/>
-	 	 	        </div>
-	 	 	        <div>
-	 	 	            <img src="./images/css.png"/>
-	 	 	            <img src="./images/javascript.png"/>
-	 	 	        </div>
-	 	 	    </div>
-	 	 	    <!-- Core Tools Section End -->
-	 	 	    
-	 	 	    <!-- Other Tools Section Start -->
-	 	 	    <h3 id="other-tools-title" class="col-12 mt-3">Other Tools</h3>
+				<!-- Chat App Project -->
+				<div class="card col-lg-4 mb-5 mb-lg-0 mr-lg-5 ml-lg-5 custom-border shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+					<a class="text-decoration-none" href="https://pjohnbencalo.github.io/chatApp/" target="_blank">
+						<img src="./images/card-chatapp.png" class="card-img-top p-2 rounded" alt="Chat App">
+					
+						<div class="card-body">
+							<h5 class="card-title">Chat App</h5>
+							<p class="card-text">A chatting app that allows you to communicate with your friends. This is an on-going project. The server is still on local.</p>
+						</div>
+					</a>
+					<div class="card-footer mt-auto">
+						<small class="text-muted card-footer-text"></small>
+					</div>
+				</div>
+				<!-- End Chat App Project -->
 
-	 	 	    <div class="d-flex d-lg-block mx-auto img-tools">
-	 	 	        <div>
-	 	 	        	<img src="./images/mongodb.png"/>
-	 	 	        	<img src="./images/nodejs.png"/>
-	 	 	        	<img src="./images/expressjs.png"/>
-	 	 	        	<img src="./images/reactjs.png"/>
-	 	 	        	<img src="./images/heroku.png"/>
-	 	 	        </div>
-	 	 	        <div>
-	 	 	            <img src="./images/git.png"/>
-	 	 	            <img src="./images/sublime.png"/>
-	 	 	            <img src="./images/postman.png"/>
-	 	 	            <img src="./images/gitlab.png"/>
-	 	 	        </div>
+				<!-- Portfolio Project -->
+				<div class="card col-lg-4 mb-5 mb-lg-0 custom-border shadow-lg" data-aos="fade-up" data-aos-duration="1000">
+					<a class="text-decoration-none" href="https://pjohnbencalo.github.io/webportfolio/" target="_blank">
+						<img src="./images/card-portfolio1.png" class="card-img-top p-2 rounded" alt="Portfolio">
+				
+						<div class="card-body">
+							<h5 class="card-title">Portfolio Design</h5>
+							<p class="card-text">A portfolio created for the requirements of Capstone 1 at <em>Zuitt Coding Bootcamp</em>.</p>
+						</div>
+					</a>
+					<div class="card-footer mt-auto">
+						<small class="text-muted card-footer-text"></small>
+					</div>
+				</div>
+				<!-- End Portfolio Project -->
 
-	 	 	    </div>
-	 	 	    <!-- Other Tools Section End -->
-	 	 	    
-	 	 	</div>
-	 	 	<!-- Tools Section End -->
-	 	 </div>
-	 	<!-- End Tools Section -->
+			</div>
+			<!-- End Projects Section -->
 
-	 	<!-- Contact Section -->
-	 	 <div id="contact" class="row mx-auto min-vh-100 p-5 d-flex justify-content-center">
+			<!-- Tools Section -->
+			<div id="tools" class="row min-vh-100 p-5 d-flex">
+					<!-- Core Tools Section Start -->
+					<h3 id="core-tools-title" class="col-12 mt-3" data-aos="zoom-in" data-aos-duration="1000">My Tools</h3>
 
-	 	 	<!-- Contact Title -->
-	 	 	 <h1 id="contact-title" class="col-12 mt-3">Contact Me</h1>
-	 	 	<!-- End Contact Title -->
+					<div class="col img-tools">
+						<div>
+							<img data-aos="zoom-in" data-aos-duration="1000" src="./images/html.png"/>
+							<img data-aos="zoom-in" data-aos-duration="1500" src="./images/css.png"/>
+							<img data-aos="zoom-in" data-aos-duration="3300" src="./images/javascript.png"/>
+							<img data-aos="zoom-in" data-aos-duration="2000" src="./images/mysql.png"/>
+							<img data-aos="zoom-in" data-aos-duration="4000" src="./images/java.png"/>
+							<img data-aos="zoom-in" data-aos-duration="3500" src="./images/cpp.png"/>
+							<img data-aos="zoom-in" data-aos-duration="1000" src="./images/python.png"/>
+							<img data-aos="zoom-in" data-aos-duration="1300" src="./images/php.png"/>
+							<img data-aos="zoom-in" data-aos-duration="2200" src="./images/vscode.png"/>
+						</div>
+					</div>
+					<!-- Core Tools Section End -->
+					
+					<!-- Other Tools Section Start -->
 
-	 	 	<form class="mt-3 p-3 col-12 col-md-8 col-xl-4 custom-border">
-	 	 	  <div class="form-group">
-	 	 	    <label for="name">Name</label>
-	 	 	    <input type="text" class="form-control" id="name" placeholder="Your Name">
-	 	 	  </div>
-	 	 	  <div class="form-group">
-	 	 	    <label for="email">Email Address</label>
-	 	 	    <input type="email" class="form-control" id="email" placeholder="name@example.com">
-	 	 	  </div>
-	 	 	  <div class="form-group">
-	 	 	    <label for="contact-number">Contact Number</label>
-	 	 	    <input type="text" class="form-control" id="contact-number" placeholder="+63 900 000 0000">
-	 	 	  </div>
-	 	 	  <div class="form-group">
-	 	 	  	 <label for="concern">Concern</label>
-	 	 	  	 <select class="form-control" id="concern" name="concern">
-	 	 	  	 	<option>--</option>
-	 	 	  		<option value="quotation">Quotation</option>
-	 	 	  		<option value="appointment">Appointment</option>
-	 	 	  		<option value="inquiry">Inquiry</option>
-	 	 	  	 </select>
-	 	 	  </div>
-	 	 	  <div class="form-group">
-	 	 	    <label for="message">Message</label>
-	 	 	    <textarea class="form-control" id="message" rows="4" ></textarea>
-	 	 	  </div>
+					<div class="col img-tools">
+						<div>
+							<img data-aos="zoom-in" data-aos-duration="3000" src="./images/mongodb.png"/>
+							<img data-aos="zoom-in" data-aos-duration="3200" src="./images/nodejs.png"/>
+							<img data-aos="zoom-in" data-aos-duration="4000" src="./images/expressjs.png"/>
+							<img data-aos="zoom-in" data-aos-duration="2000" src="./images/reactjs.png"/>
+							<img data-aos="zoom-in" data-aos-duration="1400" src="./images/heroku.png"/>
+							<img data-aos="zoom-in" data-aos-duration="1000" src="./images/git.png"/>
+							<img data-aos="zoom-in" data-aos-duration="3500" src="./images/sublime.png"/>
+							<img data-aos="zoom-in" data-aos-duration="2600" src="./images/postman.png"/>
+							<img data-aos="zoom-in" data-aos-duration="2000" src="./images/gitlab.png"/>
+						</div>			
+					</div>
+					<!-- Other Tools Section End -->
+			</div>
+			<!-- End Tools Section -->
 
-	 	 	  <!-- Button trigger modal -->
-	 	 	  <button id="send-email-btn" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
-	 	 	    Send Email
-	 	 	  </button>
-	 	 	  <!-- End Button trigger modal -->
+			<!-- Contact Section -->
+			<div id="contact" class="row min-vh-100 p-5 d-flex justify-content-center align-items-center">
 
-	 	 	  <!-- Modal -->
-	 	 	  <div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	 	 	    <div class="modal-dialog">
-	 	 	      <div class="modal-content">
-	 	 	        <div class="modal-header">
-	 	 	          <h5 class="modal-title" id="exampleModalLabel">Thank you for contacting us!</h5>
-	 	 	          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	 	 	            <span aria-hidden="true">&times;</span>
-	 	 	          </button>
-	 	 	        </div>
-	 	 	        <div class="modal-body">
-	 	 	          Message Successfully Sent
-	 	 	        </div>
-	 	 	        <div class="modal-footer">
-	 	 	          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-	 	 	        </div>
-	 	 	      </div>
-	 	 	    </div>
-	 	 	  </div>
-	 	 	  <!-- End Modal -->
-	 	 	</form>
-	 	 </div>
-	 	<!-- End Contact Section -->
+				<!-- Social Media Contact -->
+				 <div class="col-12 col-md-7" data-aos="zoom-in-up" data-aos-duration="1000">
+					<h1 id="contact-title">Let's Work Together</h1>
+					<p id="social-media-text">Connect through social media</p>
+					<a href="https://www.facebook.com/apexxx1" target="_blank" class="btn contact-details"><i class="fab fa-facebook-square"></i> Facebook</a>
+					<a href="https://www.linkedin.com/in/pjbencalo/" target="_blank" class="btn contact-details"><i class="fab fa-linkedin"></i> LinkedIn</a>
+					<a href="https://github.com/pjohnbencalo" target="_blank" class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+					<a href="https://gitlab.com/pjbencalo" target="_blank" class="btn contact-details"><i class="fab fa-gitlab"></i> GitLab</a>
+				 </div>
+				<!-- Social Media Contact -->
 
-	 	<!-- Footer -->
-	 	 <div id="footer" class="p-3 row mx-auto d-block d-md-flex justify-content-end">
+				<form class="mt-3 p-3 col-12 col-md-5 col-lg-3 custom-border" data-aos="zoom-in-up"  data-aos-duration="1000">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" placeholder="Enter your name">
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea class="form-control" id="message" rows="4" ></textarea>
+					</div>
 
-	 	 	<p id="footer-text" class="mr-auto my-auto">Connect through social media</p>
+					<!-- Button trigger modal -->
+					<button id="send-email-btn" type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+						Send Email
+					</button>
+					<!-- End Button trigger modal -->
+				</form>
+				<!-- Modal -->
+				<div class="modal fade text-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Thank you for stopping by!</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+							</div>
+							<div class="modal-body">
+							This contact form is still on-going. Contact me through my social media.
+							</div>
+							<div class="modal-footer">
+							<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Modal -->
+			</div>
+			<!-- End Contact Section -->
 
-	 	 	<!-- Facebook -->
-	 	 	<a href="https://www.facebook.com/apexxx1" target="_blank">
-	 	 		<img class="img-footer p-1 mx-2" alt="facebook" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Facebook_colored_svg_copy-512.png">
-	 	 	</a>
-	 	 	
-	 	 	<!-- Linkedin -->
-	 	 	<a href="https://www.linkedin.com/in/pjbencalo/" target="_blank">
-	 	 		<img class="img-footer p-1 mx-2" alt="linkedin" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png">
-	 	 	</a>
-	 	 	
-	 	 	<!-- GitHub -->
-	 	 	<a href="https://github.com/pjohnbencalo" target="_blank">
-	 	 		<img class="img-footer p-1 mx-2" alt="github" src="https://cdn3.iconfinder.com/data/icons/social-media-2253/25/Group-512.png">
-	 	 	</a>
-	 	 	
-	 	 	<!-- GitLab -->
-	 	 	<a href="https://gitlab.com/pjbencalo" target="_blank">
-	 	 		<img class="img-footer p-1 mx-2" alt="gitlab" src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/144_Gitlab_logo_logos-512.png">
-	 	 	</a>
-	 	 	
-	 	 </div>
-	 	<!-- End Footer -->
+			<!-- Footer -->
+			<div id="footer" class="row d-flex justify-content-center pt-1">
+				<p id="footer-text" class="my-auto">&copy; 2023 Philip John Bencalo</p>				
+			</div>
+			<!-- End Footer -->
 
-	 </div>
-	<!-- End Container -->
+		</div>
+		<!-- End Container -->
 
+		<!-- Loading square for square  -->
+		<div class="loader-wrapper">
+			<span class="loader"><span class="loader-inner"></span></span>
+		</div>
+		<!-- Bootstrap JS Bundle -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-	<!-- Bootstrap JS Bundle -->
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+		<!-- CDN Sources JS Link -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-	<!-- CDN Sources JS Link -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<!-- Initialize AOS -->
+		<script>
+		AOS.init();
+		</script>
 
-	<!-- Initialize AOS -->
-	<script>
-	  AOS.init();
-	</script>
+		<!-- Import Particles.js and app.js files -->
+		<script src=
+			"./particles.js-master/particles.js">
+		</script>
+		<script src=
+			"./particles.js-master/demo/js/app.js">
+		</script>
 
-	<!-- External JS Link -->
-	<script type="text/javascript" src="./moment.min.js"></script>
-	<script type="text/javascript" src="./index.js"></script>
-</body>
+		<!-- External JS Link -->
+		<script type="text/javascript" src="./moment.min.js"></script>
+		<script type="text/javascript" src="./index.js"></script>
+	</body>
 </html>
