@@ -82,15 +82,15 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, .card-title, #social-me
 }
 
 /* Putting border bottom starting md size */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .border-bottom-md {
     border-bottom: 1px solid #25dbcf;
   }
   #profile-img {
-	width: 18rem;
-	height: 18rem;
-	filter: drop-shadow(10px 10px 20px black);
-}
+		width: 18rem;
+		height: 18rem;
+		filter: drop-shadow(10px 10px 20px black);
+	}
 }
 
 /* Changing height of images */
@@ -99,11 +99,7 @@ a.navbar-brand, #intro-text, #checkout, #send-email-btn, .card-title, #social-me
 	border-bottom: 2px solid #25dbcf;
 }
 
-/* Change size of logo */
-/* .img-footer {
-	width: 3rem;
-	height: 3rem;
-} */
+/* Tools images effects */
 
 div.img-tools>div>img {
 	width: 150px;
@@ -250,4 +246,85 @@ div.img-tools>div>img:hover {
 
 #social-media-text {
 	font-size: 2rem;
+}
+
+/* Changing tools images when in xs size */
+
+@media (max-width: 430px) {
+	div.img-tools>div>img {
+		width: 100px;
+		filter: drop-shadow(10px 10px 20px black);
+		transition: transform 0.3s ease-out;
+	}
+}
+
+/* Change sizes in xxl screens */
+
+@media (min-width: 1920px) {
+
+	/* Loader */
+	.loader {
+		width: 50px;
+  	height: 50px;
+	}
+
+	/* Navbar */
+	.navbar {
+		font-size: 1.3rem;
+	}
+
+	/* Landing Page	*/
+  #profile-img {
+		width: 25rem;
+		height: 25rem;
+		filter: drop-shadow(10px 10px 20px black);
+	}
+
+	#intro-name {
+			font-size: 4.5rem;
+	}
+
+	#core-tools-title, #projects-title, #contact-title {
+		font-size: 5.5rem;
+		margin-top: 3vh !important;
+	}
+
+	#intro-subname {
+			font-size: 3.5rem;
+	}
+
+	#intro-description, #checkout, #intro-text, .card-text {
+			font-size: 1.5rem;
+	}
+
+	#name-info {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	/* Projects Page */
+	.card {
+		margin-bottom: 5vh !important;
+		margin-left: 3vw !important;
+		margin-right: 3vw !important;
+	}
+
+	.card-title {
+		font-size: 2rem;
+	}
+
+	.card-img-top {
+		height: 250px;
+	}
+
+	.card-footer-text {
+		font-size: 1rem;
+	}
+
+	/* Tools Page	*/
+	div.img-tools>div>img {
+		width: 200px;
+		filter: drop-shadow(10px 10px 20px black);
+		transition: transform 0.3s ease-out;
+	}
 }
